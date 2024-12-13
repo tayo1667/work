@@ -1,0 +1,245 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e2a47, #4e4376); /* Dark gradient for a techy feel */
+    color: #f1f1f1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+    background-size: cover;
+    animation: backgroundAnimation 10s infinite linear; /* Smooth background animation */
+}
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker container */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px); /* Glassmorphism effect */
+}
+
+/* Button Styling */
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #61dafb; /* Techy blue */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Hover Effects */
+button:hover {
+    background-color: #4da1d1;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Chat Container */
+.chat-container {
+    max-width: 450px;
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+}
+
+/* Chat Box */
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    border: 1px solid #444;
+    font-size: 16px;
+    color: #ddd;
+    transition: all 0.3s ease;
+}
+
+.chat-box .bot-message,
+.chat-box .user-message {
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    max-width: 75%;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.chat-box .bot-message {
+    background-color: #444;
+    align-self: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.chat-box .user-message {
+    background-color: #61dafb; /* Light blue */
+    color: #222;
+    align-self: flex-end;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.kora-pay-wallet {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.kora-pay-wallet button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kora-pay-wallet button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Box */
+input[type="text"] {
+    padding: 15px;
+    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 1px solid #444;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #61dafb;
+    outline: none;
+}
+
+/* Send Button */
+button#send-btn {
+    width: 18%;
+    padding: 15px;
+    background-color: #61dafb;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Send Button Hover Effects */
+button#send-btn:hover {
+    background-color: #4da1d1;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+button#send-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Train Container */
+.train-container {
+    background-color: #222;
+    padding: 40px;
+    max-width: 550px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+/* Train Input */
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 30px;
+    border: 1px solid #444;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #61dafb;
+    outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 18px;
+    background-color: #61dafb;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"]:hover {
+    background-color: #4da1d1;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+button[type="submit"]:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+}
+
+/* Interactive Hover Effects */
+button:active,
+button#send-btn:active,
+button[type="submit"]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}

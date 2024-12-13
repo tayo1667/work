@@ -1,0 +1,94 @@
+/* Resetting some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px; /* Added padding for smaller screens */
+}
+
+/* Welcome Screen Styling */
+.welcome-container {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%; /* Full width for responsiveness */
+}
+
+#welcome-text {
+    font-size: 2.5rem;
+    color: #6200ea;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #6200ea; /* Creates the typing cursor effect */
+}
+
+/* Auth Container (Login & Sign Up) */
+.auth-container {
+    display: none;
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Ensures it doesn't grow too wide */
+}
+
+/* Button Styling */
+button {
+    padding: 12px 30px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Hover effects for buttons */
+button:hover {
+    transform: translateY(-3px);
+    background-color: #3700b3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #welcome-text {
+        font-size: 2.2rem; /* Slightly smaller text for medium screens */
+    }
+
+    .auth-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #welcome-text {
+        font-size: 1.8rem; /* Smaller font size for small devices */
+    }
+
+    .auth-container {
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px; /* Adds space above the form */
+    }
+
+    button {
+        width: 100%; /* Buttons will take up full width on mobile */
+        font-size: 1rem; /* Slightly smaller font size for buttons */
+    }
+}
